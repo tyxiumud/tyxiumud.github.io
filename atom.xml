@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-05-07T10:02:02.991Z</updated>
+  <updated>2022-05-07T10:11:06.083Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>个人搭建博客总结</title>
+    <title>个人博客搭建总结</title>
     <link href="http://example.com/posts/0a5463f84dc9/"/>
     <id>http://example.com/posts/0a5463f84dc9/</id>
     <published>2022-05-07T08:55:14.000Z</published>
-    <updated>2022-05-07T10:02:02.991Z</updated>
+    <updated>2022-05-07T10:11:06.083Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h1><p>Butterfly主题需要使用到很多图片。如果图片太大，会严重拖慢网站的加载速度。图片压缩能够有效的缓解这个问题。除了通过gulp-imagemin来压缩图片，还可以通过在綫压缩网站和软件来进行压缩。推荐网站<a href="https://tinypng.com/">https://tinypng.com/</a></p>]]></content>
     

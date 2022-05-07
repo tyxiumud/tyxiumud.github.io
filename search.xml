@@ -29,7 +29,7 @@
     
     
     <entry>
-      <title>基础知识之——标准单元库</title>
+      <title>基础知识之三——标准单元库</title>
       <link href="/posts/4279b87df92c/"/>
       <url>/posts/4279b87df92c/</url>
       
@@ -46,31 +46,6 @@
         <tags>
             
             <tag> DC </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>为什么要搭建个人博客</title>
-      <link href="/posts/bee29428fc9f/"/>
-      <url>/posts/bee29428fc9f/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>最开始写博客就是想着在一个随时自己可以访问的平台记录下自己的学习笔记，很多时候做过了事情你要是不总结，觉得会忘记。而且你做过以后这件事以后，再回头看你做过的东西，总是会觉得有很多的地方需要改进，或者是又有了新的思路。于是乎就找到了<a href="https://blog.csdn.net/qq_41467882?type=blog">CSDN</a>。这个平台真的很简单，注册就可以开始写博客啦。</p><p>或许这就是初心吧，好记性不如烂笔头，把事情记录下来。算是一种对于学习的回顾，又可以帮助到其他一起学习的同学，又可以收获粉丝点赞，有时候还真的可以感受到快乐。或者你写了很久以后回头看，这些或许都是自己努力的痕迹吧。或许只有自己会在乎，但其实已经够了。写作有时候或许是另一种孤独~</p><p>慢慢的通过这个过程，开始尽可能的梳理自己的思路，使得自己明白的东西以文字+图片的形式展示出来。从开始陌生，后面也慢慢变得熟悉起来，偶尔可以写出自己很满意的文章呢。笔者是一个有着轻微强迫症的人，一点点的事情卡住就不会再接下来继续进行，或者是一个细节自己觉得没有做好，总是会强行要求自己尽可能的完善……要开始慢慢学着与自己和解啦~</p><p>到了后来，偶然看到Github好像可以搭建一个自己的博客，但是由于自己并不是做软件相关的，而且当时并不会使用Git。</p><p>但后来大致学会了Git的使用，最近又有一些自己的时间，就决定做一个博客。</p><p>做一个自己的博客有这几个好处</p><ul><li>相对的自由，可以DIY网页内容与格式</li><li>更加促进自己的学习，是一个学习的动力</li><li>有一个私密的空间，没有人会关注一个小博主的仓库里是什么的</li><li>多一个学习的机会，可以了解到更多本领域以外的</li></ul><p>于是就决定搭建啦~</p><p>最初开始的时候选择的是大致看了看网上的资料，决定使用<code>Hexo+Github</code>进行搭建，后续将<code>github</code>的库直接同步到<code>gitee</code>，这样就有两个平台了，一定程度上保证了数据的安全。</p><p>其次是要清楚自身的定位。首先自己并不是做前端设计的，对于软件代码也并不是接触很多，因此并不能大改，只能一定程度上的小修小补。其次是笔者准备搭建一个个人博客，也并不需要太过于花里胡哨的，影响观看。只需要有基本的功能，简介即可，不能舍本逐末。因此观看了一些<code>hexo-theme</code>选择了主题<a href="https://github.com/shen-yu/hexo-theme-ayer">ayer</a>。<a href="https://shen-yu.gitee.io/">点击即可预览</a>。</p><p>欢迎来看看<a href="https://tyxiumud.github.io/">我的博客</a></p><p>建议后续搭建可以选择next或者<a href="https://github.com/jerryc127/hexo-theme-butterfly">butterfly</a>等比较大的，这类主题使用的人比较多，后续魔改的空间很大。版本号，star数目，提交次数等都是可以进行参考的，而且建议选择比较大众的主题。博主后续有时间的也会对博客进行美化与调整。</p><p>现如今已经改成了butterfly,真的好了太多了。页面预览<br><a href="https://xiumud.gitee.io/">https://xiumud.gitee.io/</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 个人博客搭建 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 碎碎念 </tag>
             
         </tags>
       
@@ -133,7 +108,7 @@
       <link href="/posts/a65941daccf9/"/>
       <url>/posts/a65941daccf9/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>IC学习的时候，需要搭建的EDA环境。以数字电路设计为例，需要进行代码编写，验证仿真，综合，形式验证，后端综合等，相关软件，本博文分享一篇EETOP论坛网友ZHZIC分享的安装方式与资源，笔者自行依据教程进行安装，可以运行相关数字设计所需要用的软件。<br>EDA虚拟机仅供个人学习使用，且为免费使用，切勿商用。如果商用，请购买正版工具。使用者禁止私自售卖该虚拟机，带来的侵权后果由使用者自行承担。</p></blockquote><p>先给我的环境。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1WfbL6dcHg7nKVTDGq9hOzQ </span><br><span class="line">提取码：nnsq </span><br></pre></td></tr></table></figure><p>目前已经集成了数字，模拟相关的基本工具，工艺库如下。</p><p>├── Cdence<br>│   ├── IC617<br>│   ├── IScape<br>│   ├── license<br>│   └── MMSIM151<br>├── iso<br>├── lib<br>│   ├── SMIC_018_MMRF_oa<br>│   └── tsmc180rf<br>├── Mentor<br>│   ├── calibre2018<br>│   └── license<br>├── Package<br>│   ├── cadence<br>│   └── synopsys2018<br>├── patch<br>└── Synopsys<br>    ├── Formality2018<br>    ├── ICC2018<br>    ├── installer<br>    ├── LC2018<br>    ├── PrimeTime2018<br>    ├── SCL_2018<br>    ├── SpyGlass2016<br>    ├── Starrc2018<br>    ├── syn2018<br>    ├── VCS2018<br>    └── Verdi2018</p><p>现在的资源太多了，自己去找，会找到很多，不知道有用没用的，下面的教程笔者经过尝试可以安装运行。教程步骤非常齐全，且论坛坛友评价也很不错。链接如下<br>1，博文的推荐与安装方式<br><a href="http://bbs.eetop.cn/thread-897274-1-1.html">EDA软件安装教程，包括RHEL7.8、cadence软件、calibre、s家软件</a><br>2，SpyGlass的安装<br><a href="http://bbs.eetop.cn/thread-627969-1-1.html">SpyGlass2016.06安装破解教程</a><br>3，笔者安装环境展示<br><img src="https://img-blog.csdnimg.cn/37ad1535831f489ea48962f716ca53cb.png" alt="测试文章图片1"><br><img src="https://img-blog.csdnimg.cn/289eb3a412b44e23b56004db646ff593.png"><br><img src="https://img-blog.csdnimg.cn/817f3c43bd024911a8dccedacc522621.png"></p><p>最后，根据教程，可以完成GVIM，SpyGalass,VCS，Verdi，DC，PT，FM，ICC等主要是数字相关的软件。有需要笔者可以提供安装好的虚拟机资源。后续笔者会提供各个软件使用的教程，主要是官方UG（User Guide）或者是SU（Student Guide）的lab学习总结或者是自行学习总结的小demo。<br>最后，感谢以上同学无私分享。</p><p>其他：<br>1，下面是自己在eetop开的帖子，有进一步问题可以进行参考。<a href="https://bbs.eetop.cn/thread-919520-1-1.html">全套数字模拟设计EDA环境。带模拟工艺库</a><br>VM版本笔者使用的链接如下，带破解安装教程。要是有可以使用自己的即可。最开始使用的时候选择我已移动虚拟机。否则无法使用。会导致破解失败！！！</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1H1gmtQf6GTGVczGQP1j_5g</span><br><span class="line">提取码：e61y</span><br></pre></td></tr></table></figure><p>2，模拟的工艺库配置参考链接如下<br><a href="https://blog.csdn.net/weixin_44115643/article/details/118930454">Cadence Virtuoso IC617的启动和新建工程</a></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><blockquote><p>IC学习的时候，需要搭建的EDA环境。以数字电路设计为例，需要进行代码编写，验证仿真，综合，形式验证，后端综合等，相关软件，本博文分享一篇EETOP论坛网友ZHZIC分享的安装方式与资源，笔者自行依据教程进行安装，可以运行相关数字设计所需要用的软件。<br>EDA虚拟机仅供个人学习使用，且为免费使用，切勿商用。如果商用，请购买正版工具。使用者禁止私自售卖该虚拟机，带来的侵权后果由使用者自行承担。</p></blockquote><p>先给我的环境。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1WfbL6dcHg7nKVTDGq9hOzQ </span><br><span class="line">提取码：nnsq </span><br></pre></td></tr></table></figure><p>其中解压密码与root密码均是： 123456<br>目前已经集成了数字，模拟相关的基本工具，工艺库如下。</p><p>├── Cdence<br>│   ├── IC617<br>│   ├── IScape<br>│   ├── license<br>│   └── MMSIM151<br>├── iso<br>├── lib<br>│   ├── SMIC_018_MMRF_oa<br>│   └── tsmc180rf<br>├── Mentor<br>│   ├── calibre2018<br>│   └── license<br>├── Package<br>│   ├── cadence<br>│   └── synopsys2018<br>├── patch<br>└── Synopsys<br>    ├── Formality2018<br>    ├── ICC2018<br>    ├── installer<br>    ├── LC2018<br>    ├── PrimeTime2018<br>    ├── SCL_2018<br>    ├── SpyGlass2016<br>    ├── Starrc2018<br>    ├── syn2018<br>    ├── VCS2018<br>    └── Verdi2018</p><p>现在的资源太多了，自己去找，会找到很多，不知道有用没用的，下面的教程笔者经过尝试可以安装运行。教程步骤非常齐全，且论坛坛友评价也很不错。链接如下<br>1，博文的推荐与安装方式<br><a href="http://bbs.eetop.cn/thread-897274-1-1.html">EDA软件安装教程，包括RHEL7.8、cadence软件、calibre、s家软件</a><br>2，SpyGlass的安装<br><a href="http://bbs.eetop.cn/thread-627969-1-1.html">SpyGlass2016.06安装破解教程</a><br>3，笔者安装环境展示<br><img src="https://img-blog.csdnimg.cn/37ad1535831f489ea48962f716ca53cb.png" alt="测试文章图片1"><br><img src="https://img-blog.csdnimg.cn/289eb3a412b44e23b56004db646ff593.png"><br><img src="https://img-blog.csdnimg.cn/817f3c43bd024911a8dccedacc522621.png"></p><p>最后，根据教程，可以完成GVIM，SpyGalass,VCS，Verdi，DC，PT，FM，ICC等主要是数字相关的软件。有需要笔者可以提供安装好的虚拟机资源。后续笔者会提供各个软件使用的教程，主要是官方UG（User Guide）或者是SU（Student Guide）的lab学习总结或者是自行学习总结的小demo。<br>最后，感谢以上同学无私分享。</p><p>其他：<br>1，下面是自己在eetop开的帖子，有进一步问题可以进行参考。<a href="https://bbs.eetop.cn/thread-919520-1-1.html">全套数字模拟设计EDA环境。带模拟工艺库</a><br>VM版本笔者使用的链接如下，带破解安装教程。要是有可以使用自己的即可。最开始使用的时候选择我已移动虚拟机。否则无法使用。会导致破解失败！！！</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1H1gmtQf6GTGVczGQP1j_5g</span><br><span class="line">提取码：e61y</span><br></pre></td></tr></table></figure><p>2，模拟的工艺库配置参考链接如下<br><a href="https://blog.csdn.net/weixin_44115643/article/details/118930454">Cadence Virtuoso IC617的启动和新建工程</a></p>]]></content>
       
       
       <categories>

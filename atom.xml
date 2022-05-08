@@ -3,11 +3,11 @@
   <title>GuoDong の Blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://tyxiumud.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://tyxiumud.github.io/"/>
   <updated>2022-05-07T14:16:03.219Z</updated>
-  <id>http://example.com/</id>
+  <id>https://tyxiumud.github.io/</id>
   
   <author>
     <name>Jelly</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>个人博客搭建总结</title>
-    <link href="http://example.com/posts/0a5463f84dc9/"/>
-    <id>http://example.com/posts/0a5463f84dc9/</id>
+    <link href="https://tyxiumud.github.io/posts/0a5463f84dc9/"/>
+    <id>https://tyxiumud.github.io/posts/0a5463f84dc9/</id>
     <published>2022-05-07T08:55:14.000Z</published>
     <updated>2022-05-07T14:16:03.219Z</updated>
     
@@ -33,17 +33,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="http://example.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://tyxiumud.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>基础知识之三——标准单元库</title>
-    <link href="http://example.com/posts/4279b87df92c/"/>
-    <id>http://example.com/posts/4279b87df92c/</id>
+    <link href="https://tyxiumud.github.io/posts/4279b87df92c/"/>
+    <id>https://tyxiumud.github.io/posts/4279b87df92c/</id>
     <published>2022-05-06T03:44:12.000Z</published>
     <updated>2022-05-07T14:21:20.787Z</updated>
     
@@ -54,17 +54,17 @@
     
     
     
-    <category term="DC学习" scheme="http://example.com/categories/DC%E5%AD%A6%E4%B9%A0/"/>
+    <category term="DC学习" scheme="https://tyxiumud.github.io/categories/DC%E5%AD%A6%E4%B9%A0/"/>
     
     
-    <category term="DC" scheme="http://example.com/tags/DC/"/>
+    <category term="DC" scheme="https://tyxiumud.github.io/tags/DC/"/>
     
   </entry>
   
   <entry>
     <title>hexo博文写作——Typora的使用</title>
-    <link href="http://example.com/posts/7ddf536be75c/"/>
-    <id>http://example.com/posts/7ddf536be75c/</id>
+    <link href="https://tyxiumud.github.io/posts/7ddf536be75c/"/>
+    <id>https://tyxiumud.github.io/posts/7ddf536be75c/</id>
     <published>2022-05-02T03:36:08.000Z</published>
     <updated>2022-05-07T14:15:12.191Z</updated>
     
@@ -78,17 +78,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="http://example.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Typora" scheme="http://example.com/tags/Typora/"/>
+    <category term="Typora" scheme="https://tyxiumud.github.io/tags/Typora/"/>
     
   </entry>
   
   <entry>
     <title>用GVIM/VIM写Verilog——VIM配置分享</title>
-    <link href="http://example.com/posts/d995527356d1/"/>
-    <id>http://example.com/posts/d995527356d1/</id>
+    <link href="https://tyxiumud.github.io/posts/d995527356d1/"/>
+    <id>https://tyxiumud.github.io/posts/d995527356d1/</id>
     <published>2022-04-30T15:47:25.000Z</published>
     <updated>2022-05-07T10:06:49.192Z</updated>
     
@@ -102,17 +102,17 @@
     
     
     
-    <category term="文本编辑器" scheme="http://example.com/categories/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <category term="文本编辑器" scheme="https://tyxiumud.github.io/categories/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
     
-    <category term="GVIM" scheme="http://example.com/tags/GVIM/"/>
+    <category term="GVIM" scheme="https://tyxiumud.github.io/tags/GVIM/"/>
     
   </entry>
   
   <entry>
     <title>IC设计EDA软件虚拟机环境配置与安装教程</title>
-    <link href="http://example.com/posts/a65941daccf9/"/>
-    <id>http://example.com/posts/a65941daccf9/</id>
+    <link href="https://tyxiumud.github.io/posts/a65941daccf9/"/>
+    <id>https://tyxiumud.github.io/posts/a65941daccf9/</id>
     <published>2022-04-28T12:04:59.000Z</published>
     <updated>2022-05-07T15:56:25.721Z</updated>
     
@@ -126,19 +126,19 @@
     
     
     
-    <category term="数字IC设计" scheme="http://example.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
+    <category term="数字IC设计" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="EDA环境搭建" scheme="http://example.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <category term="EDA环境搭建" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="数字IC环境配置" scheme="http://example.com/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="数字IC环境配置" scheme="https://tyxiumud.github.io/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>RedHat Linux 7安装CentOS 7 yum源</title>
-    <link href="http://example.com/posts/46f984b01519/"/>
-    <id>http://example.com/posts/46f984b01519/</id>
+    <link href="https://tyxiumud.github.io/posts/46f984b01519/"/>
+    <id>https://tyxiumud.github.io/posts/46f984b01519/</id>
     <published>2022-04-28T10:26:34.000Z</published>
     <updated>2022-05-07T15:56:20.188Z</updated>
     
@@ -152,12 +152,12 @@
     
     
     
-    <category term="数字IC设计" scheme="http://example.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
+    <category term="数字IC设计" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="EDA环境搭建" scheme="http://example.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <category term="EDA环境搭建" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="数字IC环境配置" scheme="http://example.com/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="数字IC环境配置" scheme="https://tyxiumud.github.io/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   

@@ -1,0 +1,344 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>TCL脚本语言的学习（二） | GuoDong の Blog</title><meta name="keywords" content="TCL"><meta name="author" content="Jelly"><meta name="copyright" content="Jelly"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="控制流介绍控制流命令，对之前系列TCL脚本语言的学习（一）进行补充 if语法： if test1 body1 ?elseif test2 body2 elseif…. ? ?else bodyn?TCL 先把 test1 当作一个表达式求值，如果值非 0，则把 body1 当作一个脚本执行并返回所得值，否则把 test2 当作一个表达式求值，如果值非 0，则把 body2 当作一个脚本执行并返回所">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCL脚本语言的学习（二）">
+<meta property="og:url" content="https://tyxiumud.github.io/posts/deed0e8e9628/index.html">
+<meta property="og:site_name" content="GuoDong の Blog">
+<meta property="og:description" content="控制流介绍控制流命令，对之前系列TCL脚本语言的学习（一）进行补充 if语法： if test1 body1 ?elseif test2 body2 elseif…. ? ?else bodyn?TCL 先把 test1 当作一个表达式求值，如果值非 0，则把 body1 当作一个脚本执行并返回所得值，否则把 test2 当作一个表达式求值，如果值非 0，则把 body2 当作一个脚本执行并返回所">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141756.png">
+<meta property="article:published_time" content="2022-05-08T15:15:57.000Z">
+<meta property="article:modified_time" content="2022-05-09T06:34:10.702Z">
+<meta property="article:author" content="Jelly">
+<meta property="article:tag" content="TCL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141756.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tyxiumud.github.io/posts/deed0e8e9628/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="5roAJHqRvCNdgmcyzwyCwEMNEgeEvcYVuCuhFylgTmk"/><meta name="baidu-site-verification" content="code-GXOoLRGqK5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5fb98c58a0728a996886b0f93dadcbbf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":false,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":150,"languages":{"author":"作者: Jelly","link":"链接: ","source":"来源: GuoDong の Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'TCL脚本语言的学习（二）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-09 14:34:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href= "/css/my.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="GuoDong の Blog" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Game/"><i class="fa-fw fa fa-gamepad"></i><span> 小游戏</span></a></li><li><a class="site-page child" href="/Source/"><i class="fa-fw fa fa fa-cloud"></i><span> 资源分享</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">GuoDong の Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Game/"><i class="fa-fw fa fa-gamepad"></i><span> 小游戏</span></a></li><li><a class="site-page child" href="/Source/"><i class="fa-fw fa fa fa-cloud"></i><span> 资源分享</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">TCL脚本语言的学习（二）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-08T15:15:57.000Z" title="发表于 2022-05-08 23:15:57">2022-05-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-09T06:34:10.702Z" title="更新于 2022-05-09 14:34:10">2022-05-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">DC学习笔记</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/TCL/">TCL</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="TCL脚本语言的学习（二）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div><article class="post-content" id="article-container"><h1 id="控制流"><a href="#控制流" class="headerlink" title="控制流"></a>控制流</h1><p>介绍控制流命令，对之前系列<a href="https://tyxiumud.github.io/posts/eed5d1af4b43/">TCL脚本语言的学习（一）</a>进行补充</p>
+<h2 id="if"><a href="#if" class="headerlink" title="if"></a>if</h2><p>语法： if test1 body1 ?elseif test2 body2 elseif…. ? ?else bodyn?<br>TCL 先把 test1 当作一个表达式求值，如果值非 0，则把 body1 当作一个脚本执行并返回所得值，否则把 test2 当作一个表达式求值，如果值非 0，则把 body2 当作一个脚本执行并返回所得值……。例：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> &#123; $x&lt;<span class="number">0</span> &#125; &#123;</span><br><span class="line">  <span class="built_in">puts</span> <span class="string">&quot;x is smaller than zero&quot;</span></span><br><span class="line">&#125; elseif &#123;$x==<span class="number">1</span>&#125; &#123;</span><br><span class="line">  <span class="built_in">puts</span> <span class="string">&quot;x is equal 1&quot;</span></span><br><span class="line">&#125; elseif &#123;$x==<span class="number">2</span>&#125; &#123;</span><br><span class="line">  <span class="built_in">puts</span> <span class="string">&quot;x is equal 2&quot;</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="built_in">puts</span> <span class="string">&quot;x is other&quot;</span></span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>这里需要注意的是，<br>if 和{之间应该有一个空格，否则TCL解释器会把’if{‘作为一个整体当作一个命令名，从而导致错误。<br>‘{‘一定要写在上一行，因为如果不这样，TCL 解释器会认为if命令在换行符处已结<br>束，下一行会被当成新的命令，从而导致错误的结果需要将<code>&#125;&#123;</code> 分开写，<br>否则会报错<code>extra characters after close-brace</code><br><img src="https://img-blog.csdnimg.cn/20200324224458156.png"></p>
+<h2 id="循环命令"><a href="#循环命令" class="headerlink" title="循环命令"></a>循环命令</h2><h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><p>语法为: while test body<br>参数 test 是一个表达式，body 是一个脚本，<strong>如果表达式test 的值非 0，就运行脚本，直到表达式为0 才停止循环，此时 while 命令中断并返回一个空字符串。</strong><br>例如：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> a &#123;a b c d e&#125;</span><br><span class="line"><span class="built_in">set</span> b <span class="string">&quot; &quot;</span></span><br><span class="line"><span class="built_in">set</span> i [expr [llength $a]<span class="number">-1</span>]</span><br><span class="line"><span class="keyword">while</span> &#123;$i&gt;=<span class="number">0</span>&#125; &#123;</span><br><span class="line">lappend b [lindex $a $i]</span><br><span class="line">incr i <span class="number">-1</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">puts</span> <span class="string">&quot;b=$b&quot;</span></span><br></pre></td></tr></table></figure>
+<p>对代码进行分析<br>set 变量a为一个list，b为一个空list<br>然后计算列表里有几个元素，将其减一后的值赋值给i，这里减一的目的是从零开始计数会多一个<br>开始进行循环，首先i的值是4大于0，表达式为真，开始执行脚本。<br>脚本为将数组a的第i个位置的元素添加到b list 里，然后给i减一同时进行下一次判断即可。<br>最后输出b的值</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">b=e d c b a</span><br></pre></td></tr></table></figure>
+<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><p>语法为: for init test reinit body<br>参数init是一个初始化脚本，第二个参数test是一个表达式，用来决定循环什么时候中断，第三个参数reinit是一个重新初始化的脚本，第四个参数body也是脚本，代表循环体。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> &#123;<span class="built_in">set</span> p <span class="number">0</span>&#125; &#123;$p&lt;=<span class="number">10</span>&#125; &#123;incr p&#125; &#123;</span><br><span class="line"><span class="built_in">puts</span> <span class="string">&quot;$p squared is : [expr $p*$p]&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>执行结果为</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="number">0</span> squared is : <span class="number">0</span></span><br><span class="line"><span class="number">1</span> squared is : <span class="number">1</span></span><br><span class="line"><span class="number">2</span> squared is : <span class="number">4</span></span><br><span class="line"><span class="number">3</span> squared is : <span class="number">9</span></span><br><span class="line"><span class="number">4</span> squared is : <span class="number">16</span></span><br><span class="line"><span class="number">5</span> squared is : <span class="number">25</span></span><br><span class="line"><span class="number">6</span> squared is : <span class="number">36</span></span><br><span class="line"><span class="number">7</span> squared is : <span class="number">49</span></span><br><span class="line"><span class="number">8</span> squared is : <span class="number">64</span></span><br><span class="line"><span class="number">9</span> squared is : <span class="number">81</span></span><br><span class="line"><span class="number">10</span> squared is : <span class="number">100</span></span><br></pre></td></tr></table></figure>
+<h3 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h3><p>foreach varName list body 第一个参数 varName 是一个变量，第二个参数 list 是一个表(有序集合)，第三个参数 body 是循环体。每次取得链表的一个元素，都会执行循环体一次。这里对于复杂的操作不进行解释，参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41467882/article/details/104841946">文章一</a></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> a [<span class="built_in">list</span> A B C D E F G]</span><br><span class="line"><span class="built_in">set</span> b <span class="string">&quot;&quot;</span></span><br><span class="line">foreach i $a &#123;</span><br><span class="line"><span class="built_in">set</span> b [linsert $b <span class="number">0</span> $i]</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">puts</span> $b</span><br></pre></td></tr></table></figure>
+<p>运行结果为</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">G F E D C B A</span><br></pre></td></tr></table></figure>
+<p>赋值给变量</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% foreach &#123;x y&#125; &#123;a b c d &#125; &#123;</span><br><span class="line">  puts <span class="string">&quot;<span class="variable">$x</span> <span class="variable">$y</span>&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">a b</span><br><span class="line">c d</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20200324235828626.png">又例如：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% foreach i &#123;a b&#125; &#123;j k&#125; &#123;v W x y z&#125; &#123;</span><br><span class="line">puts <span class="string">&quot;i=<span class="variable">$i</span>,j=<span class="variable">$j</span>,k=<span class="variable">$k</span>&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">i=a,j=v,k=W</span><br><span class="line">i=b,j=x,k=y</span><br><span class="line">i=,j=z,k=</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="break和continue命令"><a href="#break和continue命令" class="headerlink" title="break和continue命令"></a>break和continue命令</h3><p>在循环体中，可以用break和continue命令中断循环。其中break命令结束整个循环过程，并从循环中跳出，continue只是结束本次循环<br>这里有一个特别好的例子<br>说明：这里首先进行给一个list，然后使用foreach循环进行写入数据当遇见break时候直接退出了循环，而continue仅仅只是跳出此次循环继续向b里写入数</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% <span class="built_in">set</span> b &#123;&#125;</span><br><span class="line">% <span class="built_in">set</span> a &#123;<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span>&#125;</span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span></span><br><span class="line">% foreach i $a &#123;</span><br><span class="line"><span class="keyword">if</span> &#123;$i == <span class="number">4</span>&#125; <span class="keyword">break</span> </span><br><span class="line"><span class="built_in">set</span> b [linsert $b <span class="number">0</span> $i]</span><br><span class="line">&#125;</span><br><span class="line">% <span class="built_in">puts</span> $b</span><br><span class="line"><span class="number">3</span> <span class="number">2</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">% <span class="built_in">set</span> b &#123;&#125;</span><br><span class="line">% <span class="built_in">set</span> a &#123;1 2 3 4 5&#125;</span><br><span class="line">1 2 3 4 5</span><br><span class="line">% foreach i <span class="variable">$a</span> &#123;</span><br><span class="line"><span class="keyword">if</span> &#123;<span class="variable">$i</span> == 4&#125; <span class="built_in">continue</span> </span><br><span class="line"><span class="built_in">set</span> b [linsert <span class="variable">$b</span> 0 <span class="variable">$i</span>]</span><br><span class="line">&#125;</span><br><span class="line">% puts <span class="variable">$b</span></span><br><span class="line">5 3 2 1</span><br></pre></td></tr></table></figure>
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><p>和 C 语言中 switch 语句一样，TCL 中的 switch 命令也可以由 if 命令实现。只是书写起来较为烦琐。 switch 命令的语法为: switch ? options? string { pattern body ? pattern body …?}<br>注意这里进行的是字符匹配<br><img src="https://img-blog.csdnimg.cn/20200325001239602.png"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> x a;</span><br><span class="line"><span class="built_in">set</span> t1 0;<span class="built_in">set</span> t2 0;<span class="built_in">set</span> t3 0;</span><br><span class="line">switch <span class="variable">$x</span> &#123;</span><br><span class="line">a -</span><br><span class="line">b &#123;incr t1&#125;</span><br><span class="line">c &#123;incr t2&#125;</span><br><span class="line">default &#123;incr t3&#125;</span><br><span class="line">&#125; </span><br><span class="line">puts <span class="string">&quot;t1=<span class="variable">$t1</span>,t2=<span class="variable">$t2</span>，t3=<span class="variable">$t3</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>x&#x3D;a时执行的是t1加2<br>其中 a 的后面跟一个’－’表示使用和下一个模式相同的脚本。default 表示匹配任意值。一旦switch 命令 找到一个模式匹配，就执行相应的脚本，并返回脚本的值，作为 switch 命令的返回值。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> grade B;</span><br><span class="line"><span class="keyword">switch</span> $grade &#123;</span><br><span class="line">   A &#123;</span><br><span class="line">     <span class="built_in">puts</span> <span class="string">&quot;Well done!&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line">   B &#123;</span><br><span class="line">     <span class="built_in">puts</span> <span class="string">&quot;Excellent!&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   C &#123;</span><br><span class="line">     <span class="built_in">puts</span> <span class="string">&quot;You passed!&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line">   F &#123;</span><br><span class="line">     <span class="built_in">puts</span> <span class="string">&quot;Better try again&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">default</span> &#123;</span><br><span class="line">     <span class="built_in">puts</span> <span class="string">&quot;Invalid grade&quot;</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">puts</span> <span class="string">&quot;Your grade is  $grade&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><p>source 命令读一个文件并把这个文件的内容作为一个脚本进行求值<br>以上边的switch第一段代码为例<br>使用VIM新建一个文件，写入文件后保存退出</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">vim switch1.tcl</span><br></pre></td></tr></table></figure>
+<p>键入<code>wish</code>然后输入<code>source switch1.tcl</code><br><img src="https://img-blog.csdnimg.cn/20200325010021646.png"></p>
+<h1 id="过程（procedure）"><a href="#过程（procedure）" class="headerlink" title="过程（procedure）"></a>过程（procedure）</h1><p>TCL 支持过程的定义和调用，在 TCL 中,过程可以看作是用 TCL 脚本实现的命令，效果与 TCL的固有命令相似。我们可以在任何时候使用 proc 命令定义自己的过程，TCL 中的过程类似于 C中的函数。<br>TCL 中过程是由 proc 命令产生的：<br>例如：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% proc add &#123;x y &#125; &#123;expr $x+$y&#125; </span><br></pre></td></tr></table></figure>
+<p>proc 命令的第一个参数是你要定义的过程的名字，第二个参数是过程的参数列表，参数之间用空格隔开，第三个参数是一个 TCL 脚本，代表过程体。 proc 生成一个新的命令，可以象固有命令一样调用： </p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">% add <span class="number">1</span> <span class="number">2</span></span><br><span class="line"><span class="number">3</span> </span><br></pre></td></tr></table></figure>
+
+<p>此篇暂时这里结束，后又需要会继续记录</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://tyxiumud.github.io">Jelly</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://tyxiumud.github.io/posts/deed0e8e9628/">https://tyxiumud.github.io/posts/deed0e8e9628/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tyxiumud.github.io" target="_blank">GuoDong の Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/TCL/">TCL</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141756.png" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/91597d56b19f/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220512152118.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hexo-Butterfly音乐播放器的添加</div></div></a></div><div class="next-post pull-right"><a href="/posts/eed5d1af4b43/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141531.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">TCL脚本语言的学习（一）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/eed5d1af4b43/" title="TCL脚本语言的学习（一）"><img class="cover" src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141531.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-08</div><div class="title">TCL脚本语言的学习（一）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jelly</div><div class="author-info__description">保持敬畏，保持谦卑~</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tyxiumud" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:823300630@qq.com" target="_blank" title="Email"><i class="fas fa-envelope-open-text"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_41467882" target="_blank" title="CSDN"><i class="fa fa-bolt"></i></a><a class="social-icon" href="https://qm.qq.com/cgi-bin/qm/qr?k=pJBgAYOxtTGu3g3asjnMkMm34NFZE0LQ&amp;jump_from=webapi" target="_blank" title="QQ群"><i class="fa fa-users"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS链接"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">吼吼！我的博客终于搭建起来啦！本博客主要是做IC设计相关的分享。初次尝试博客的搭建，部分组件还未完成。后续会进行添加补充，有什么问题或者建议欢迎邮件联系，我会尽快回复。或者加入我的QQ群，<a class="button--animated" target="_blank" rel="noopener" href="https://qm.qq.com/cgi-bin/qm/qr?k=pJBgAYOxtTGu3g3asjnMkMm34NFZE0LQ&jump_from=webapi" >点击加入</a>。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E6%B5%81"><span class="toc-text">控制流</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#if"><span class="toc-text">if</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E5%91%BD%E4%BB%A4"><span class="toc-text">循环命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#while"><span class="toc-text">while</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#for"><span class="toc-text">for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#foreach"><span class="toc-text">foreach</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#break%E5%92%8Ccontinue%E5%91%BD%E4%BB%A4"><span class="toc-text">break和continue命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#switch"><span class="toc-text">switch</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#source"><span class="toc-text">source</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%87%E7%A8%8B%EF%BC%88procedure%EF%BC%89"><span class="toc-text">过程（procedure）</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/91597d56b19f/" title="Hexo-Butterfly音乐播放器的添加"><img src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220512152118.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo-Butterfly音乐播放器的添加"/></a><div class="content"><a class="title" href="/posts/91597d56b19f/" title="Hexo-Butterfly音乐播放器的添加">Hexo-Butterfly音乐播放器的添加</a><time datetime="2022-05-12T06:43:26.000Z" title="发表于 2022-05-12 14:43:26">2022-05-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/deed0e8e9628/" title="TCL脚本语言的学习（二）"><img src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141756.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TCL脚本语言的学习（二）"/></a><div class="content"><a class="title" href="/posts/deed0e8e9628/" title="TCL脚本语言的学习（二）">TCL脚本语言的学习（二）</a><time datetime="2022-05-08T15:15:57.000Z" title="发表于 2022-05-08 23:15:57">2022-05-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/eed5d1af4b43/" title="TCL脚本语言的学习（一）"><img src="https://cdn.jsdelivr.net/gh/tyxiumud/blog.img/20220509141531.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="TCL脚本语言的学习（一）"/></a><div class="content"><a class="title" href="/posts/eed5d1af4b43/" title="TCL脚本语言的学习（一）">TCL脚本语言的学习（一）</a><time datetime="2022-05-08T15:01:16.000Z" title="发表于 2022-05-08 23:01:16">2022-05-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 <i id="heartbeat" class="fa fas fa-heartbeat"></i> Jelly</div><div class="footer_custom_text"><p>  <a style="margin-inline:5px" target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>  <a style="margin-inline:5px" target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a><a style="margin-inline:5px" target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a><a style="margin-inline:5px" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-lxjvup73y-823300630-qqcom.vercel.app',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-lxjvup73y-823300630-qqcom.vercel.app',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      document.getElementById('twikoo-count').innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="7422861869" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><script> let backimg =["url(/img/background.jpg)","url(/img/background1.jpg)","url(/img/background2.jpg)" ,"url(/img/background4.jpg)","url(/img/background5.jpg)","url(/img/background6.jpg)","url(/img/background8.jpg)","url(/img/background9.jpg)"];let index =Math.ceil(Math.random() * (backimg.length));document.getElementById("web_bg").style.backgroundImage = backimg[index]</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="true" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

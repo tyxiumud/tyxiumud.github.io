@@ -43,9 +43,10 @@ font-family: FZQianLXSJW,-apple-system, BlinkMacSystemFont, "Segoe UI", "Helveti
 }
 
 /*以下是封面图透明*/
-#page-header.full_page::before {
+#page-header.full_page::before,  #page-header:not(.not-top-img):before{
     background-color: transparent!important;
   }
+
 
 /*文章页背景*//*分类页面*//*时间轴页面*/
 [data-theme = dark] .layout>#post,[data-theme = dark] .layout #page ,[data-theme = dark] .layout #archive ,[data-theme = dark] .layout>#category{

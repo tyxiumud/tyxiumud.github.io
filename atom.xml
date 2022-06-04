@@ -3,11 +3,11 @@
   <title>GuoDong の Blog</title>
   
   
-  <link href="https://tyxiumud.github.io/atom.xml" rel="self"/>
+  <link href="https://guodongblog.com/atom.xml" rel="self"/>
   
-  <link href="https://tyxiumud.github.io/"/>
+  <link href="https://guodongblog.com/"/>
   <updated>2022-06-02T15:05:29.852Z</updated>
-  <id>https://tyxiumud.github.io/</id>
+  <id>https://guodongblog.com/</id>
   
   <author>
     <name>Jelly</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Win11安装ise14.7（最终解决方案）——Ubuntu18.04安装ISE与modelsim</title>
-    <link href="https://tyxiumud.github.io/posts/cd9705ae4bd1/"/>
-    <id>https://tyxiumud.github.io/posts/cd9705ae4bd1/</id>
+    <link href="https://guodongblog.com/posts/cd9705ae4bd1/"/>
+    <id>https://guodongblog.com/posts/cd9705ae4bd1/</id>
     <published>2022-06-02T14:50:17.000Z</published>
     <updated>2022-06-02T15:05:29.852Z</updated>
     
@@ -34,21 +34,21 @@
     
     
     
-    <category term="数字IC设计" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
+    <category term="数字IC设计" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="EDA环境搭建" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <category term="EDA环境搭建" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="数字IC环境配置" scheme="https://tyxiumud.github.io/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="数字IC环境配置" scheme="https://guodongblog.com/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
-    <category term="ISE14.7" scheme="https://tyxiumud.github.io/tags/ISE14-7/"/>
+    <category term="ISE14.7" scheme="https://guodongblog.com/tags/ISE14-7/"/>
     
   </entry>
   
   <entry>
     <title>DC系列博客写作背景——闲聊篇</title>
-    <link href="https://tyxiumud.github.io/posts/33c374544746/"/>
-    <id>https://tyxiumud.github.io/posts/33c374544746/</id>
+    <link href="https://guodongblog.com/posts/33c374544746/"/>
+    <id>https://guodongblog.com/posts/33c374544746/</id>
     <published>2022-05-21T16:44:06.000Z</published>
     <updated>2022-05-22T06:24:01.420Z</updated>
     
@@ -62,19 +62,19 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="观点" scheme="https://tyxiumud.github.io/tags/%E8%A7%82%E7%82%B9/"/>
+    <category term="观点" scheme="https://guodongblog.com/tags/%E8%A7%82%E7%82%B9/"/>
     
   </entry>
   
   <entry>
     <title>DC学习笔记正式篇之零——综述与基本流程介绍</title>
-    <link href="https://tyxiumud.github.io/posts/80912d01b675/"/>
-    <id>https://tyxiumud.github.io/posts/80912d01b675/</id>
+    <link href="https://guodongblog.com/posts/80912d01b675/"/>
+    <id>https://guodongblog.com/posts/80912d01b675/</id>
     <published>2022-05-21T08:19:35.000Z</published>
     <updated>2022-05-22T06:23:57.113Z</updated>
     
@@ -89,19 +89,19 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>个人博客搭建——环境部署最终解决方案</title>
-    <link href="https://tyxiumud.github.io/posts/f4fcb8b173dc/"/>
-    <id>https://tyxiumud.github.io/posts/f4fcb8b173dc/</id>
+    <link href="https://guodongblog.com/posts/f4fcb8b173dc/"/>
+    <id>https://guodongblog.com/posts/f4fcb8b173dc/</id>
     <published>2022-05-18T03:09:22.000Z</published>
     <updated>2022-05-21T07:32:58.961Z</updated>
     
@@ -116,17 +116,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://guodongblog.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="https://tyxiumud.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://guodongblog.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>hexo博文写作-文章写作模板与相关配置</title>
-    <link href="https://tyxiumud.github.io/posts/26f19a18323e/"/>
-    <id>https://tyxiumud.github.io/posts/26f19a18323e/</id>
+    <link href="https://guodongblog.com/posts/26f19a18323e/"/>
+    <id>https://guodongblog.com/posts/26f19a18323e/</id>
     <published>2022-05-16T11:27:21.000Z</published>
     <updated>2022-05-18T16:16:21.103Z</updated>
     
@@ -143,17 +143,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://guodongblog.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="博文写作" scheme="https://tyxiumud.github.io/tags/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/"/>
+    <category term="博文写作" scheme="https://guodongblog.com/tags/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>基础知识之二——STA相关的基本定义</title>
-    <link href="https://tyxiumud.github.io/posts/4b760c56b458/"/>
-    <id>https://tyxiumud.github.io/posts/4b760c56b458/</id>
+    <link href="https://guodongblog.com/posts/4b760c56b458/"/>
+    <id>https://guodongblog.com/posts/4b760c56b458/</id>
     <published>2022-05-16T11:20:15.000Z</published>
     <updated>2022-05-21T14:42:36.510Z</updated>
     
@@ -168,21 +168,21 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="STA" scheme="https://tyxiumud.github.io/tags/STA/"/>
+    <category term="STA" scheme="https://guodongblog.com/tags/STA/"/>
     
   </entry>
   
   <entry>
     <title>基础知识之一——STA基础概述</title>
-    <link href="https://tyxiumud.github.io/posts/d998c5ed40bb/"/>
-    <id>https://tyxiumud.github.io/posts/d998c5ed40bb/</id>
+    <link href="https://guodongblog.com/posts/d998c5ed40bb/"/>
+    <id>https://guodongblog.com/posts/d998c5ed40bb/</id>
     <published>2022-05-16T10:15:39.000Z</published>
     <updated>2022-05-21T14:39:06.572Z</updated>
     
@@ -196,21 +196,21 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="STA" scheme="https://tyxiumud.github.io/tags/STA/"/>
+    <category term="STA" scheme="https://guodongblog.com/tags/STA/"/>
     
   </entry>
   
   <entry>
     <title>Hexo-Butterfly音乐播放器的添加</title>
-    <link href="https://tyxiumud.github.io/posts/91597d56b19f/"/>
-    <id>https://tyxiumud.github.io/posts/91597d56b19f/</id>
+    <link href="https://guodongblog.com/posts/91597d56b19f/"/>
+    <id>https://guodongblog.com/posts/91597d56b19f/</id>
     <published>2022-05-12T06:43:26.000Z</published>
     <updated>2022-05-18T16:16:21.104Z</updated>
     
@@ -227,17 +227,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://guodongblog.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="https://tyxiumud.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://guodongblog.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>TCL脚本语言的学习（二）</title>
-    <link href="https://tyxiumud.github.io/posts/deed0e8e9628/"/>
-    <id>https://tyxiumud.github.io/posts/deed0e8e9628/</id>
+    <link href="https://guodongblog.com/posts/deed0e8e9628/"/>
+    <id>https://guodongblog.com/posts/deed0e8e9628/</id>
     <published>2022-05-08T15:15:57.000Z</published>
     <updated>2022-05-21T07:53:25.130Z</updated>
     
@@ -251,19 +251,19 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="TCL" scheme="https://tyxiumud.github.io/categories/DC/TCL/"/>
+    <category term="TCL" scheme="https://guodongblog.com/categories/DC/TCL/"/>
     
     
-    <category term="TCL" scheme="https://tyxiumud.github.io/tags/TCL/"/>
+    <category term="TCL" scheme="https://guodongblog.com/tags/TCL/"/>
     
   </entry>
   
   <entry>
     <title>TCL脚本语言的学习（一）</title>
-    <link href="https://tyxiumud.github.io/posts/eed5d1af4b43/"/>
-    <id>https://tyxiumud.github.io/posts/eed5d1af4b43/</id>
+    <link href="https://guodongblog.com/posts/eed5d1af4b43/"/>
+    <id>https://guodongblog.com/posts/eed5d1af4b43/</id>
     <published>2022-05-08T15:01:16.000Z</published>
     <updated>2022-05-21T07:53:45.198Z</updated>
     
@@ -280,19 +280,19 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="TCL" scheme="https://tyxiumud.github.io/categories/DC/TCL/"/>
+    <category term="TCL" scheme="https://guodongblog.com/categories/DC/TCL/"/>
     
     
-    <category term="TCL" scheme="https://tyxiumud.github.io/tags/TCL/"/>
+    <category term="TCL" scheme="https://guodongblog.com/tags/TCL/"/>
     
   </entry>
   
   <entry>
     <title>个人博客搭建与美化</title>
-    <link href="https://tyxiumud.github.io/posts/b0fabd94caa6/"/>
-    <id>https://tyxiumud.github.io/posts/b0fabd94caa6/</id>
+    <link href="https://guodongblog.com/posts/b0fabd94caa6/"/>
+    <id>https://guodongblog.com/posts/b0fabd94caa6/</id>
     <published>2022-05-07T08:55:14.000Z</published>
     <updated>2022-05-18T16:16:21.103Z</updated>
     
@@ -308,17 +308,17 @@
     
     
     
-    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://guodongblog.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Hexo" scheme="https://tyxiumud.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://guodongblog.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>基础知识之三——标准单元库</title>
-    <link href="https://tyxiumud.github.io/posts/bd5d5e54f486/"/>
-    <id>https://tyxiumud.github.io/posts/bd5d5e54f486/</id>
+    <link href="https://guodongblog.com/posts/bd5d5e54f486/"/>
+    <id>https://guodongblog.com/posts/bd5d5e54f486/</id>
     <published>2022-05-06T03:44:12.000Z</published>
     <updated>2022-05-21T14:39:23.181Z</updated>
     
@@ -332,21 +332,21 @@
     
     
     
-    <category term="DC" scheme="https://tyxiumud.github.io/categories/DC/"/>
+    <category term="DC" scheme="https://guodongblog.com/categories/DC/"/>
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/categories/DC/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="DC学习笔记" scheme="https://tyxiumud.github.io/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="DC学习笔记" scheme="https://guodongblog.com/tags/DC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="STA" scheme="https://tyxiumud.github.io/tags/STA/"/>
+    <category term="STA" scheme="https://guodongblog.com/tags/STA/"/>
     
   </entry>
   
   <entry>
     <title>hexo博文写作——Typora的使用</title>
-    <link href="https://tyxiumud.github.io/posts/7ddf536be75c/"/>
-    <id>https://tyxiumud.github.io/posts/7ddf536be75c/</id>
+    <link href="https://guodongblog.com/posts/7ddf536be75c/"/>
+    <id>https://guodongblog.com/posts/7ddf536be75c/</id>
     <published>2022-05-02T03:36:08.000Z</published>
     <updated>2022-05-18T16:16:21.103Z</updated>
     
@@ -360,19 +360,19 @@
     
     
     
-    <category term="个人博客搭建" scheme="https://tyxiumud.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="个人博客搭建" scheme="https://guodongblog.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="Typora" scheme="https://tyxiumud.github.io/tags/Typora/"/>
+    <category term="Typora" scheme="https://guodongblog.com/tags/Typora/"/>
     
-    <category term="博文写作" scheme="https://tyxiumud.github.io/tags/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/"/>
+    <category term="博文写作" scheme="https://guodongblog.com/tags/%E5%8D%9A%E6%96%87%E5%86%99%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>用GVIM/VIM写Verilog——VIM配置分享</title>
-    <link href="https://tyxiumud.github.io/posts/d995527356d1/"/>
-    <id>https://tyxiumud.github.io/posts/d995527356d1/</id>
+    <link href="https://guodongblog.com/posts/d995527356d1/"/>
+    <id>https://guodongblog.com/posts/d995527356d1/</id>
     <published>2022-04-30T15:47:25.000Z</published>
     <updated>2022-05-17T07:44:45.440Z</updated>
     
@@ -389,17 +389,17 @@
     
     
     
-    <category term="文本编辑器" scheme="https://tyxiumud.github.io/categories/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <category term="文本编辑器" scheme="https://guodongblog.com/categories/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     
     
-    <category term="GVIM" scheme="https://tyxiumud.github.io/tags/GVIM/"/>
+    <category term="GVIM" scheme="https://guodongblog.com/tags/GVIM/"/>
     
   </entry>
   
   <entry>
     <title>IC设计EDA软件虚拟机环境配置与安装教程</title>
-    <link href="https://tyxiumud.github.io/posts/a65941daccf9/"/>
-    <id>https://tyxiumud.github.io/posts/a65941daccf9/</id>
+    <link href="https://guodongblog.com/posts/a65941daccf9/"/>
+    <id>https://guodongblog.com/posts/a65941daccf9/</id>
     <published>2022-04-28T12:04:59.000Z</published>
     <updated>2022-05-18T16:16:21.103Z</updated>
     
@@ -414,19 +414,19 @@
     
     
     
-    <category term="数字IC设计" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
+    <category term="数字IC设计" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="EDA环境搭建" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <category term="EDA环境搭建" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="数字IC环境配置" scheme="https://tyxiumud.github.io/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="数字IC环境配置" scheme="https://guodongblog.com/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>RedHat Linux 7安装CentOS 7 yum源</title>
-    <link href="https://tyxiumud.github.io/posts/46f984b01519/"/>
-    <id>https://tyxiumud.github.io/posts/46f984b01519/</id>
+    <link href="https://guodongblog.com/posts/46f984b01519/"/>
+    <id>https://guodongblog.com/posts/46f984b01519/</id>
     <published>2022-04-28T10:26:34.000Z</published>
     <updated>2022-05-18T16:16:21.098Z</updated>
     
@@ -441,12 +441,12 @@
     
     
     
-    <category term="数字IC设计" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
+    <category term="数字IC设计" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/"/>
     
-    <category term="EDA环境搭建" scheme="https://tyxiumud.github.io/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <category term="EDA环境搭建" scheme="https://guodongblog.com/categories/%E6%95%B0%E5%AD%97IC%E8%AE%BE%E8%AE%A1/EDA%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-    <category term="数字IC环境配置" scheme="https://tyxiumud.github.io/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <category term="数字IC环境配置" scheme="https://guodongblog.com/tags/%E6%95%B0%E5%AD%97IC%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   

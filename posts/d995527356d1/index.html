@@ -211,7 +211,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><link rel="stylesheet" href= "/css/my.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="GuoDong の Blog" type="application/atom+xml">
+}</script><link rel="stylesheet" href= "/css/my.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="GuoDong の Blog" type="application/atom+xml">
 </head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
@@ -675,7 +675,7 @@ btf.addGlobalFn('pjaxComplete', () => {
   } else {
     window.loadOtherComment = loadTwikoo
   }
-})()</script></div><div class="aplayer no-destroy" data-id="7422861869" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><script> let backimg =["url(/img/background.jpg)","url(/img/background1.jpg)","url(/img/background2.jpg)" ,"url(/img/background4.jpg)"];let index =Math.floor(Math.random() * (backimg.length));document.getElementById("web_bg").style.backgroundImage = backimg[index]</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+})()</script></div><div class="aplayer no-destroy" data-id="7422861869" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-lrcType="-1"> </div><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script>var __runMeting = function () { if (window.aplayers) { try { window.aplayers.forEach(function (p) { if (!p.options.fixed) p.destroy(); }); } catch (e) {} } if (typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length) { loadMeting(); } }; window.addEventListener('load', __runMeting); document.addEventListener('pjax:complete', __runMeting);</script><script> let backimg =["url(/img/background.jpg)","url(/img/background1.jpg)","url(/img/background2.jpg)" ,"url(/img/background4.jpg)"];let index =Math.floor(Math.random() * (backimg.length));document.getElementById("web_bg").style.backgroundImage = backimg[index]</script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
 POWERMODE.shake = false;
 POWERMODE.mobile = false;
 document.body.addEventListener('input', POWERMODE);
@@ -683,7 +683,7 @@ document.body.addEventListener('input', POWERMODE);
   const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
   window.pjax = new Pjax({
-    elements: 'a:not([target="_blank"]):not([data-fancybox])',
+    elements: 'a:not([target="_blank"]):not([data-fancybox]):not([href="/Game/"])',
     selectors: pjaxSelectors,
     cacheBust: false,
     analytics: false,

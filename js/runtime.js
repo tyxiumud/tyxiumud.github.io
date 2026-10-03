@@ -32,5 +32,7 @@ setInterval(() => {
   else{
     currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/月亮-上班了-6adea8?style=social&logo=coffeescript' title='这个点了应该去睡觉啦，熬夜对身体不好哦，晚安，好梦~'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
   }
-  document.getElementById("workboard").innerHTML = currentTimeHtml;
+  var workboard = document.getElementById("workboard");
+  if (!workboard) return;
+  workboard.innerHTML = currentTimeHtml;
 }, 1000);

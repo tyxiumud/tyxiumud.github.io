@@ -11,7 +11,11 @@ img {
 }
 @font-face{
   font-family: 'FZQianLXSJW' ;  /* 自定义字体名称 */
-  src: url(FZQianLXSJW.TTF); /* 引入字体文件的路径 */
+  /* 原始 TTF 有 5.5 MB，转成无损的 WOFF2 后 2.4 MB（8168 个字形一个不少）。 */
+  src: url(FZQianLXSJW.woff2) format('woff2'); /* 引入字体文件的路径 */
+  /* 字体较大，不加 font-display 时浏览器会先隐藏正文等它下载完（FOIT），
+     swap 让后备字体立即显示、字体到位后再替换。 */
+  font-display: swap;
 }
 /*应用在body体里，放在第一个，font-family会按顺序使用字体族。如果第一个没找到就会找第二个，以此类推。*/
 body {
@@ -46,6 +50,41 @@ font-family: FZQianLXSJW,-apple-system, BlinkMacSystemFont, "Segoe UI", "Helveti
 #page-header.full_page::before,  #page-header:not(.not-top-img):before{
     background-color: transparent!important;
   }
+
+/*页脚透明：5.x 默认改为浅蓝实底，这里还原 4.x 的透明效果，露出网页背景*/
+#footer{
+    background: transparent!important;
+}
+
+/*页脚版权行跳动的小心心：还原 4.x 的 heartbeat.min.css 动画*/
+#heartbeat {
+    color: red;
+    animation: iconAnimate 1.33s ease-in-out infinite;
+}
+@-moz-keyframes iconAnimate {
+    0%, 100% { transform: scale(1); }
+    10%, 30% { transform: scale(.9); }
+    20%, 40%, 60%, 80% { transform: scale(1.1); }
+    50%, 70% { transform: scale(1.1); }
+}
+@-webkit-keyframes iconAnimate {
+    0%, 100% { transform: scale(1); }
+    10%, 30% { transform: scale(.9); }
+    20%, 40%, 60%, 80% { transform: scale(1.1); }
+    50%, 70% { transform: scale(1.1); }
+}
+@-o-keyframes iconAnimate {
+    0%, 100% { transform: scale(1); }
+    10%, 30% { transform: scale(.9); }
+    20%, 40%, 60%, 80% { transform: scale(1.1); }
+    50%, 70% { transform: scale(1.1); }
+}
+@keyframes iconAnimate {
+    0%, 100% { transform: scale(1); }
+    10%, 30% { transform: scale(.9); }
+    20%, 40%, 60%, 80% { transform: scale(1.1); }
+    50%, 70% { transform: scale(1.1); }
+}
 
 
 /*文章页背景*//*分类页面*//*时间轴页面*/
